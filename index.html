@@ -49,10 +49,16 @@ h1 small{display:block;font-size:.4em;font-weight:500;font-style:italic;color:va
 .taste .more{font-family:var(--sans);font-size:.85rem}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.78rem;color:var(--muted);line-height:1.75}
 @media (max-width:520px){ .page{padding-top:2.2rem} .card{padding:1.2rem 1.1rem} }
+
+.nav{display:flex;gap:1.2rem;justify-content:flex-end;font-family:var(--sans);font-size:.85rem;margin:-1.5rem 0 2rem}
+.nav a{color:var(--ink-2);text-decoration:none;padding-bottom:.15rem;border-bottom:1.5px solid transparent}
+.nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+.nav a:hover{color:var(--accent)}
 </style>
 </head>
 <body>
 <div class="page">
+  <nav class="nav" aria-label="網站導覽"><a href="./" aria-current="page">首頁</a><a href="graffiti/">邊注伴讀</a><a href="about.html">關於</a></nav>
   <p class="eyebrow">CONCRETE MATHEMATICS · 繁體中文</p>
   <h1>具體數學・繁體中文伴讀<small>Concrete Mathematics, for Taiwanese readers</small></h1>
   <p class="lede">為 Graham、Knuth、Patashnik 合著的 <i>Concrete Mathematics</i>（第 2 版）準備的繁體中文學習資源，寫給台灣的讀者。數學可以慢慢推導；書裡那些只有在美國長大才懂的語言與文化梗，這裡一則一則講清楚。</p>
@@ -82,7 +88,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-fa
 
   <footer>
     本站為非官方的學習材料，與原作者及出版者無關。<i>Concrete Mathematics</i> 書中文字的著作權屬原出版者，本站僅在評論所需範圍內引用片段，請搭配原書閱讀。<br>
-    評註、中文說法與文化小辭典以 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant">CC BY-NC-SA 4.0</a> 授權。
+    關於這個計畫，見<a href="about.html">關於</a>頁。<br>評註、中文說法與文化小辭典以 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant">CC BY-NC-SA 4.0</a> 授權。
   </footer>
 </div>
 </body>

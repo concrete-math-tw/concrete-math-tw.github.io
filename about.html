@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關於・具體數學繁體中文伴讀</title>
+<meta name="description" content="具體數學繁體中文伴讀計畫的緣起、內容、整理方式與授權。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,700;1,400&family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#F3F1EA; --sheet:#FFFDF8; --ink:#1D1B16; --ink-2:#4A463C; --muted:#7A7466;
+  --rule:#DDD6C6; --accent:#8A3B12; --accent-soft:#F4E3D6;
+  --serif:"Noto Serif TC","Zilla Slab",Georgia,serif;
+  --slab:"Zilla Slab","Noto Serif TC",Georgia,serif;
+  --sans:"Noto Sans TC","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --ground:#14130F; --sheet:#1C1A16; --ink:#EDE8DC; --ink-2:#C9C2B2; --muted:#968F80;
+  --rule:#35312A; --accent:#E3A27A; --accent-soft:#3A2618; } }
+:root[data-theme="dark"]{
+  --ground:#14130F; --sheet:#1C1A16; --ink:#EDE8DC; --ink-2:#C9C2B2; --muted:#968F80;
+  --rule:#35312A; --accent:#E3A27A; --accent-soft:#3A2618; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.85}
+a{color:var(--accent)}
+.page{max-width:46rem;margin:0 auto;padding:3.5rem 1.25rem 4rem}
+.eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--muted);margin:0 0 .9rem}
+h1{font-family:var(--slab);font-size:clamp(2.2rem,7vw,3.2rem);line-height:1.15;margin:0}
+h1 small{display:block;font-size:.4em;font-weight:500;font-style:italic;color:var(--ink-2);margin-top:.55rem}
+.lede{color:var(--ink-2);margin:1.2rem 0 2.4rem;padding-bottom:2rem;border-bottom:2px solid var(--ink)}
+.card{background:var(--sheet);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:3px;padding:1.5rem 1.6rem 1.4rem}
+.card h2{font-family:var(--slab);font-size:1.6rem;margin:0 0 .2rem}
+.card .sub{font-family:var(--sans);font-size:.8rem;color:var(--muted);margin:0 0 1rem;letter-spacing:.04em}
+.card p{margin:0 0 1rem}
+.stats{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin:0 0 1.2rem;padding:0;list-style:none;font-family:var(--sans)}
+.stats b{display:block;font-family:var(--slab);font-size:1.7rem;color:var(--accent);line-height:1.2}
+.stats span{font-size:.8rem;color:var(--ink-2)}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{font-family:var(--sans);font-size:.9rem;font-weight:700;text-decoration:none;padding:.5rem 1.05rem;border-radius:3px;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--sheet)}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.taste{margin:2.4rem 0 0}
+.taste h3{font-family:var(--sans);font-size:.75rem;font-weight:700;letter-spacing:.16em;color:var(--muted);margin:0 0 .7rem}
+.taste blockquote{margin:0;padding:.2rem 0 .2rem 1rem;border-left:3px solid var(--rule);font-family:"Zilla Slab",Georgia,serif;font-style:italic;font-size:1.12rem}
+.taste .pg{font-family:var(--sans);font-style:normal;font-size:.78rem;color:var(--muted);margin-left:.4rem}
+.taste p{margin:.7rem 0 0;color:var(--ink-2);font-size:.95rem}
+.taste .more{font-family:var(--sans);font-size:.85rem}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.78rem;color:var(--muted);line-height:1.75}
+@media (max-width:520px){ .page{padding-top:2.2rem} .card{padding:1.2rem 1.1rem} }
+
+.nav{display:flex;gap:1.2rem;justify-content:flex-end;font-family:var(--sans);font-size:.85rem;margin:-1.5rem 0 2rem}
+.nav a{color:var(--ink-2);text-decoration:none;padding-bottom:.15rem;border-bottom:1.5px solid transparent}
+.nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+.nav a:hover{color:var(--accent)}
+
+h2.sec{font-family:var(--slab);font-size:1.35rem;margin:2.4rem 0 .6rem}
+.about p{margin:0 0 1rem}
+.about ul{padding-left:1.3rem;margin:0 0 1rem} .about li{margin-bottom:.4rem}
+.open{display:flex;flex-wrap:wrap;gap:.5rem;margin:.4rem 0 1rem;padding:0;list-style:none;font-family:var(--sans);font-size:.88rem}
+.open a{display:inline-block;padding:.25rem .7rem;border:1px solid var(--rule);border-radius:2px;background:var(--sheet);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav" aria-label="網站導覽"><a href="./">首頁</a><a href="graffiti/">邊注伴讀</a><a href="about.html" aria-current="page">關於</a></nav>
+  <p class="eyebrow">ABOUT</p>
+  <h1>關於這個計畫<small>Why a Taiwanese companion to Concrete Mathematics</small></h1>
+
+  <div class="about">
+  <p class="lede"><i>Concrete Mathematics</i> 是 Ronald Graham、Donald Knuth、Oren Patashnik 以史丹佛大學同名課程為基礎寫成的教科書，第 2 版出版於 1994 年，至今仍是學電腦科學的人學習和式、遞迴、二項式係數、生成函數與漸近分析的經典。這個網站替它準備繁體中文的伴讀資源。</p>
+
+  <h2 class="sec">緣起</h2>
+  <p>這本書的數學，只要肯花時間，終究推得出來；真正讓非英語母語讀者卡住的，常常是頁邊那些斜體小字。書中每一頁的頁邊，都印著最早一批修課學生留下的「塗鴉」：雙關語、美國流行文化、文學典故、數學冷笑話。作者刻意把它們排進正式教科書，讓整本書讀起來像坐在教室裡聽同學起鬨。</p>
+  <p>問題是，要笑得出來，得先知道 proof 也是酒的度數、Wilson 先生是《淘氣阿丹》裡的鄰居、Burma-Shave 是一排公路廣告牌。這些東西字典查不到，課本也不會解釋。這份伴讀，就是想把這一塊補起來。</p>
+
+  <h2 class="sec">寫給誰</h2>
+  <ul>
+    <li>正在讀、或打算讀 <i>Concrete Mathematics</i> 的台灣學生與自學者；</li>
+    <li>讀過這本書、卻對頁邊一知半解的人；</li>
+    <li>想知道「美國理工學生的幽默感長什麼樣子」的人——這些笑話的套路，在很多英文教科書和技術文件裡都看得到。</li>
+  </ul>
+
+  <h2 class="sec">內容</h2>
+  <p><a href="graffiti/">邊注伴讀</a>替全書頁邊的全部 557 則塗鴉逐則評註，依原書頁碼排列，每則說明旁邊正文在講什麼、哪個字被拿來玩、背後是哪段文化；能在中文裡重現的笑點，另附「中文說法」。書末附一份依主題整理的<b>文化小辭典</b>（棒球、美國硬幣、廣告、影視、福爾摩斯、拉丁文縮寫……），以及一節「<b>英文雙關的五種套路</b>」，把全書笑話歸納成幾種手法。</p>
+  <p>尤拉、高斯、萊布尼茲等人的拉丁文、法文、德文原文引言，已屬公有領域，保留全文並附中譯。</p>
+
+  <h2 class="sec">怎麼整理的</h2>
+  <ul>
+    <li><b>逐頁對照原書</b>：每則評註都對照同一頁的正文判讀，因為很多笑點只有和旁邊的句子放在一起才成立。</li>
+    <li><b>有根據才下結論</b>：文化背景盡量找到出處；例如 p.73 把正文的感嘆詞 “Oho” 讀成 Ohio，可由原書索引收有「Toledo, Ohio, 73」一條佐證。</li>
+    <li><b>不確定就照實標明</b>：有幾則至今看不出確定的笑點，標為「笑點未定」，列出可能的解讀，不硬猜。</li>
+    <li><b>頁碼</b>依原書第 2 版第 32 刷；各刷次頁碼相同。</li>
+    <li>整理過程使用了 AI 輔助（Anthropic 的 Claude），所有條目都經過逐則對照原書查核。</li>
+  </ul>
+
+  <h2 class="sec">怎麼使用</h2>
+  <p>這是<b>伴讀</b>材料，請翻開原書對照：每則只引原文開頭幾個字，讓你在書上找到是哪一則。建議先讀書上的英文、自己想三秒，再看解析——雙關語一旦解釋就不好笑了，這是翻譯笑話的宿命。</p>
+
+  <h2 class="sec">歡迎一起補完</h2>
+  <p>下面幾則，我們找不到可靠的解讀。如果你知道笑點在哪，或發現任何錯誤，歡迎到 GitHub 的 <a href="https://github.com/concrete-math-tw/graffiti/issues">Issues</a> 留言：</p>
+  <ul class="open">
+    <li><a href="graffiti/#u-15">p.15 (‘relax’ = ‘destroy’)</a></li>
+    <li><a href="graffiti/#u-40">p.40 Get out the whip.</a></li>
+    <li><a href="graffiti/#u-82">p.82 modumor</a></li>
+    <li><a href="graffiti/#u-461">p.461 Into a Big Oh.</a></li>
+    <li><a href="graffiti/#u-472">p.472 Will the authors never get serious?</a></li>
+  </ul>
+
+  <h2 class="sec">著作權與授權</h2>
+  <p>本站為非官方的學習材料，與原作者及出版者無關。<i>Concrete Mathematics</i> 書中文字的著作權屬原出版者（Addison-Wesley／Pearson）；本站僅在評論所需範圍內引用片段，請搭配原書閱讀。</p>
+  <p>本站的評註、中文說法與文化小辭典，以<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant">創用 CC 姓名標示－非商業性－相同方式分享 4.0 國際</a>授權：歡迎非商業轉載與改作，請註明出處並以相同方式分享。</p>
+  </div>
+
+  <footer>具體數學・繁體中文伴讀　·　<a href="./">回首頁</a></footer>
+</div>
+</body>
+</html>
