@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>具體數學・繁體中文伴讀</title>
+<meta name="description" content="Graham、Knuth、Patashnik《Concrete Mathematics》（具體數學）的繁體中文學習資源：全書 557 則頁邊塗鴉逐則評註。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,700;1,400&family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#F3F1EA; --sheet:#FFFDF8; --ink:#1D1B16; --ink-2:#4A463C; --muted:#7A7466;
+  --rule:#DDD6C6; --accent:#8A3B12; --accent-soft:#F4E3D6;
+  --serif:"Noto Serif TC","Zilla Slab",Georgia,serif;
+  --slab:"Zilla Slab","Noto Serif TC",Georgia,serif;
+  --sans:"Noto Sans TC","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --ground:#14130F; --sheet:#1C1A16; --ink:#EDE8DC; --ink-2:#C9C2B2; --muted:#968F80;
+  --rule:#35312A; --accent:#E3A27A; --accent-soft:#3A2618; } }
+:root[data-theme="dark"]{
+  --ground:#14130F; --sheet:#1C1A16; --ink:#EDE8DC; --ink-2:#C9C2B2; --muted:#968F80;
+  --rule:#35312A; --accent:#E3A27A; --accent-soft:#3A2618; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.85}
+a{color:var(--accent)}
+.page{max-width:46rem;margin:0 auto;padding:3.5rem 1.25rem 4rem}
+.eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--muted);margin:0 0 .9rem}
+h1{font-family:var(--slab);font-size:clamp(2.2rem,7vw,3.2rem);line-height:1.15;margin:0}
+h1 small{display:block;font-size:.4em;font-weight:500;font-style:italic;color:var(--ink-2);margin-top:.55rem}
+.lede{color:var(--ink-2);margin:1.2rem 0 2.4rem;padding-bottom:2rem;border-bottom:2px solid var(--ink)}
+.card{background:var(--sheet);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:3px;padding:1.5rem 1.6rem 1.4rem}
+.card h2{font-family:var(--slab);font-size:1.6rem;margin:0 0 .2rem}
+.card .sub{font-family:var(--sans);font-size:.8rem;color:var(--muted);margin:0 0 1rem;letter-spacing:.04em}
+.card p{margin:0 0 1rem}
+.stats{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin:0 0 1.2rem;padding:0;list-style:none;font-family:var(--sans)}
+.stats b{display:block;font-family:var(--slab);font-size:1.7rem;color:var(--accent);line-height:1.2}
+.stats span{font-size:.8rem;color:var(--ink-2)}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{font-family:var(--sans);font-size:.9rem;font-weight:700;text-decoration:none;padding:.5rem 1.05rem;border-radius:3px;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--sheet)}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.taste{margin:2.4rem 0 0}
+.taste h3{font-family:var(--sans);font-size:.75rem;font-weight:700;letter-spacing:.16em;color:var(--muted);margin:0 0 .7rem}
+.taste blockquote{margin:0;padding:.2rem 0 .2rem 1rem;border-left:3px solid var(--rule);font-family:"Zilla Slab",Georgia,serif;font-style:italic;font-size:1.12rem}
+.taste .pg{font-family:var(--sans);font-style:normal;font-size:.78rem;color:var(--muted);margin-left:.4rem}
+.taste p{margin:.7rem 0 0;color:var(--ink-2);font-size:.95rem}
+.taste .more{font-family:var(--sans);font-size:.85rem}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.78rem;color:var(--muted);line-height:1.75}
+@media (max-width:520px){ .page{padding-top:2.2rem} .card{padding:1.2rem 1.1rem} }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">CONCRETE MATHEMATICS · 繁體中文</p>
+  <h1>具體數學・繁體中文伴讀<small>Concrete Mathematics, for Taiwanese readers</small></h1>
+  <p class="lede">為 Graham、Knuth、Patashnik 合著的 <i>Concrete Mathematics</i>（第 2 版）準備的繁體中文學習資源，寫給台灣的讀者。數學可以慢慢推導；書裡那些只有在美國長大才懂的語言與文化梗，這裡一則一則講清楚。</p>
+
+  <section class="card" aria-labelledby="graffiti">
+    <h2 id="graffiti">邊注伴讀</h2>
+    <p class="sub">GRAFFITI IN THE MARGINS, EXPLAINED</p>
+    <p>書裡每一頁的頁邊，都印著最早一批修課學生留下的「塗鴉」：雙關語、美國流行文化、文學典故、數學冷笑話。這份伴讀依頁碼逐則評註，說明旁邊正文在講什麼、哪個字被拿來玩、背後是哪段文化；能在中文裡重現的笑點，另附中文說法。請翻開原書對照閱讀。</p>
+    <ul class="stats">
+      <li><b>557</b><span>則頁邊塗鴉，逐則評註</span></li>
+      <li><b>13</b><span>類文化小辭典</span></li>
+      <li><b>5</b><span>種英文雙關套路</span></li>
+    </ul>
+    <div class="btns">
+      <a class="btn primary" href="graffiti/">線上閱讀</a>
+      <a class="btn ghost" href="graffiti/concrete-math-graffiti-zh.pdf">下載 PDF</a>
+      <a class="btn ghost" href="https://github.com/concrete-math-tw/graffiti">GitHub</a>
+    </div>
+  </section>
+
+  <section class="taste" aria-labelledby="taste">
+    <h3 id="taste">先嚐一則</h3>
+    <blockquote>What is a proof? “One half of one percent pure alcohol.”<span class="pg">p.4</span></blockquote>
+    <p>美國酒標上的 <b>proof</b>（酒度）是酒精濃度的兩倍，100 proof 就是 50%，所以 1 proof 恰好是 0.5%。正文在講數學「證明（proof）」，學生回答：一個 proof，就是百分之零點五的純酒精。</p>
+    <p class="more"><a href="graffiti/#p-4">在伴讀裡看這一則 →</a></p>
+  </section>
+
+  <footer>
+    本站為非官方的學習材料，與原作者及出版者無關。<i>Concrete Mathematics</i> 書中文字的著作權屬原出版者，本站僅在評論所需範圍內引用片段，請搭配原書閱讀。<br>
+    評註、中文說法與文化小辭典以 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant">CC BY-NC-SA 4.0</a> 授權。
+  </footer>
+</div>
+</body>
+</html>
